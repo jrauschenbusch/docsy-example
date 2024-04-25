@@ -1,0 +1,60 @@
+baseURL: https://example.docsy.dev/
+title: Goldydocs
+enableRobotsTXT: true
+enableGitInfo: true
+taxonomies:
+  tag: tags
+  category: categories
+params:
+  taxonomy:
+    taxonomyCloud: []
+    taxonomyCloudTitle: []
+    taxonomyPageHeader: []
+    pygmentsCodeFences: true
+    pygmentsUseClasses: false
+    pygmentsUseClassic: false
+    pygmentsStyle: tango
+  copyright:
+    authors: "Docsy Authors | [CC BY
+      4.0](https://creativecommons.org/licenses/by/4.0) | "
+    from_year: 2018
+permalinks:
+  blog: /:section/:year/:month/:day/:slug/
+imaging:
+  resampleFilter: CatmullRom
+  quality: 75
+  anchor: smart
+markup:
+  goldmark:
+    parser:
+      attribute:
+        block: true
+    renderer:
+      unsafe: true
+  asciidocExt:
+    backend: html5
+    safeMode: unsafe
+    workingFolderCurrent: true
+outputs:
+  section:
+    - HTML
+module:
+  hugoVersion:
+    extended: true
+    min: 0.110.0
+  imports:
+    - path: github.com/google/docsy
+      disable: false
+    - path: github.com/jrauschenbusch/hugo-adoc-module
+      disable: false
+      mounts:
+        - source: docs/content
+          target: content/docs/module-docs-1/module
+security:
+  exec:
+    allow:
+      - ^asciidoctor$
+      - ^(dart-)?sass(-embedded)?$
+      - ^go$
+      - ^npx$
+      - ^postcss$
