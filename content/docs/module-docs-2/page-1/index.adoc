@@ -1,0 +1,9 @@
+---
+title: Page 1
+---
+
+== Module Docs 2 - Page 1
+
+Content can be modified, is also detected by `--watch`, and also triggers refresh of browser, but changes are NOT re-rendered.
+
+Just when Hugo module mount is removed, everything works as expected.
