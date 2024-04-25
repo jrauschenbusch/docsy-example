@@ -8,3 +8,5 @@ weight: 20
 {{% pageinfo %}}
 This is a placeholder page that shows you how to use this template site.
 {{% /pageinfo %}}
+
+Just change some text here and jump to another _index.adoc or index.adoc. Sometimes changes trigger a re-rendering, sometimes not.

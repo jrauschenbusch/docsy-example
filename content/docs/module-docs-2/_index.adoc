@@ -1,7 +1,6 @@
 ---
 title: Module Docs 2
 linkTitle: Module Docs 2
-menu: {main: {weight: 20}}
 weight: 20
 ---
 

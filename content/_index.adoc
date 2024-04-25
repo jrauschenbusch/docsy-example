@@ -1,0 +1,6 @@
+---
+title: Goldydocs
+type: docs
+---
+
+If text is changed directly after `hugo serve` is telling that the web server is running, everything works as expected. But when jumping to `about/index.adoc` and changing text there, no re-rendering happens.
